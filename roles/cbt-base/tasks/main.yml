@@ -1,0 +1,4 @@
+---
+# tasks file for cbt-base
+- include: getpdsh.yml
+  tags: getpdsh

@@ -1,0 +1,4 @@
+---
+# tasks file for cbthead
+- include: packages.yml
+  tags: packages

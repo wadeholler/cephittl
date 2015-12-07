@@ -1,0 +1,17 @@
+---
+- name: cbt base setup
+  hosts: cbtactors
+  roles:
+    - ../roles/cbt-base
+  serial: 3
+
+- name: cbt head node setup
+  hosts: cbthead
+  roles:
+    - ../roles/cbthead
+
+- name: cbt client setup
+  hosts: cbtclients
+  roles:
+    - ../roles/cbtclient
+

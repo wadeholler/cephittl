@@ -1,0 +1,12 @@
+---
+- name: install epel-release repo
+  yum: name=epel-release state=latest
+
+- name: packages for cbt clients
+  yum: name={{ item }} state=latest
+  with_items:
+    - collectl
+    - blktrace
+    - iperf
+    - valgrind
+  

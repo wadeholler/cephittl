@@ -1,0 +1,3 @@
+---
+- name: install PyYAML
+  yum: name=PyYAML state=installed

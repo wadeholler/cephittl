@@ -1,0 +1,4 @@
+---
+# tasks file for cbtclient
+- include: packages.yml
+  tags: packages

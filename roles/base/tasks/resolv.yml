@@ -1,0 +1,4 @@
+---
+- name: put good resolv.conf
+  copy: src=etc/resolv.conf
+        dest=/etc/resolv.conf
