@@ -9,4 +9,7 @@
     - blktrace
     - iperf
     - valgrind
+    - libaio
+    - zlib
+    - librdmacm
   

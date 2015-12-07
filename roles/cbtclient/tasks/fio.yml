@@ -1,0 +1,3 @@
+---
+- name: copy fio VERSION SPECIFIC
+  copy: src=fio dest=/usr/local/bin/fio mode=0755
