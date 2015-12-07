@@ -13,5 +13,6 @@ setup for VMs
 	running with NeworkManager off && nework on
 
 Missing:
+
 missing dynamic grab of cbt users id_rsa.pub
 missing known_hosts addition from cbthead to all cbt nodes
