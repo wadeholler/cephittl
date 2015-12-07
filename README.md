@@ -5,3 +5,6 @@ setup for VMs
 	use hand built bridge br320,br330 (vlan 320 and 330) added with virsh net-define
 	use same kickstart as physical machines
 	dhcp'd off same cpa00001
+
+	Example virsh-install
+	virt-install --network model=virtio,bridge=br320 --name cpx00003 --ram=4096 --vcpus=8 --disk path=/vms/cpx00003.img,size=10 --graphics none --location=nfs:192.168.242.10:/pub --extra-args=" ks=nfs:192.168.242.10:/pub/ks.cfg console=tty0 console=ttyS0,115200"virt-install --network model=virtio,bridge=br320 --name cpx00003 --ram=4096 --vcpus=8 --disk path=/vms/cpx00003.img,size=10 --graphics none --location=nfs:192.168.242.10:/pub --extra-args=" ks=nfs:192.168.242.10:/pub/ks.cfg console=tty0 console=ttyS0,115200"
