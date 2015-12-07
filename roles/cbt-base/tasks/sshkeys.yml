@@ -1,0 +1,5 @@
+---
+- name: add cbt ssh keys
+  authorized_key: user=cbt key="{{ item }}"
+  with_file:
+    - home/cbt/id_rsa.pub

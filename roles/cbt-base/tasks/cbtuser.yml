@@ -1,0 +1,6 @@
+---
+- name: add cbt group
+  group: name=cbt gid=501 state=present
+
+- name: add cbt user
+  user: name=cbt uid=501 shell=/bin/bash generate_ssh_key=yes groups=cbt

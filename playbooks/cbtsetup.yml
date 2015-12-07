@@ -1,6 +1,6 @@
 ---
 - name: cbt base setup
-  hosts: cbtactors
+  hosts: cbtall
   roles:
     - ../roles/cbt-base
   serial: 3
