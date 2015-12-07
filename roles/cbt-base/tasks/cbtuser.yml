@@ -4,3 +4,9 @@
 
 - name: add cbt user
   user: name=cbt uid=501 shell=/bin/bash generate_ssh_key=yes groups=cbt
+
+- name: sudoers modification nopasswd
+  lineinfile: dest=/etc/sudoers regexp=^cbt line='cbt ALL=(ALL) NOPASSWD:ALL'
+
+- name: sudoers modification no requiretty
+  lineinfile: dest=/etc/sudoers regexp='Defaults    requiretty' line='#Defaults    requiretty'

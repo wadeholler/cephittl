@@ -1,3 +1,6 @@
 ---
 - name: install PyYAML
   yum: name=PyYAML state=installed
+
+- name: install git
+  yum: name=git state=latest
