@@ -1,0 +1,31 @@
+127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
+::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
+
+#cephittl
+192.168.242.10	cpa00001.ceph.ittl	cpa00001
+192.168.242.11	cpa00002.ceph.ittl	cpa00002
+192.168.242.12	cpa00003.ceph.ittl	cpa00003
+192.168.242.21	cpa00004.ceph.ittl	cpa00004
+192.168.242.22	cpa00005.ceph.ittl	cpa00005
+192.168.242.23	cpa00006.ceph.ittl	cpa00006
+
+192.168.242.13	cpn00001.ceph.ittl	cpn00001
+192.168.242.14	cpn00002.ceph.ittl	cpn00002
+192.168.242.15	cpn00003.ceph.ittl	cpn00003
+192.168.242.16	cpn00004.ceph.ittl	cpn00004
+192.168.242.17	cpn00005.ceph.ittl	cpn00005
+192.168.242.18	cpn00006.ceph.ittl	cpn00006
+192.168.242.19	cpn00007.ceph.ittl	cpn00007
+192.168.242.20	cpn00008.ceph.ittl	cpn00008
+192.168.242.24	cpn00009.ceph.ittl	cpn00009
+192.168.242.25	cpn00010.ceph.ittl	cpn00010
+192.168.242.26	cpn00011.ceph.ittl	cpn00011
+192.168.242.27	cpn00012.ceph.ittl	cpn00012
+192.168.242.28	cpn00013.ceph.ittl	cpn00013
+192.168.242.29	cpn00014.ceph.ittl	cpn00014
+192.168.242.30	cpn00015.ceph.ittl	cpn00015
+192.168.242.31	cpn00016.ceph.ittl	cpn00016
+
+192.168.242.253 cpx00001.ceph.ittl      cpx00001
+192.168.242.242 cpx00002.ceph.ittl      cpx00002
+

@@ -1,0 +1,4 @@
+---
+- name: put good host file in place
+  copy: src=etc/hosts
+        dest=/etc/hosts

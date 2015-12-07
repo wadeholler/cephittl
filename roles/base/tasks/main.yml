@@ -1,0 +1,13 @@
+---
+# tasks file for base
+- include: ntp.yml
+  tags: ntp
+
+- include: hostfile.yml
+  tags: hostsfile
+
+- include: update.yml
+  tags: update
+
+- include: selinux.yml
+  tags: selinux
