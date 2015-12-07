@@ -6,6 +6,9 @@
 - include: hostfile.yml
   tags: hostsfile
 
+- include: resolv.yml
+  tags: resolv
+
 - include: update.yml
   tags: update
 
