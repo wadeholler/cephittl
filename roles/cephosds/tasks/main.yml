@@ -1,0 +1,5 @@
+---
+# tasks file for cephmons
+
+- include: packages.yml
+  tags: packages

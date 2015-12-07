@@ -1,0 +1,4 @@
+---
+- name: centos-release-openstack-liberty
+  yum: name=centos-release-openstack-liberty state=latest
+

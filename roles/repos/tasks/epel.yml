@@ -1,0 +1,3 @@
+- name: install epel if not here
+  yum: name=epel-release state=latest
+

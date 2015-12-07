@@ -1,0 +1,7 @@
+---
+# tasks file for repos
+- include: openstack.yml
+  tags: openstack
+
+- include: epel.yml
+  tags: repo

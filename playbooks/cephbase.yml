@@ -1,0 +1,24 @@
+---
+- name: ceph base install MONS
+  hosts: mons
+  roles:
+    - ../roles/repos
+    - ../roles/cephmons
+
+- name: ceph base install OSDS
+  hosts: osds
+  roles:
+    - ../roles/repos
+    - ../roles/cephosds
+
+- name: ceph base install RGWS
+  hosts: rgws
+  roles:
+    - ../roles/repos
+    - ../roles/cephrgws
+
+- name: ceph base install MDSS
+  hosts: mdss
+  roles:
+    - ../roles/repos
+    - ../roles/cephmdss
