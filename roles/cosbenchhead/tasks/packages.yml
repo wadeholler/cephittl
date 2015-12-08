@@ -1,0 +1,9 @@
+---
+- name: install plugin pri
+  yum: name=yum-plugin-priorities state=latest
+
+- name: install packages
+  yum: name={{ item }} state=latest
+  with_items:
+   - git
+   - java-1.7.0-openjdk

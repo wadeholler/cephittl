@@ -1,0 +1,6 @@
+---
+- name: cosbench setup
+  hosts: cosbenchhead
+  roles:
+    - ../roles/cosbenchhead
+    

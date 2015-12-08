@@ -1,0 +1,8 @@
+---
+# tasks file for cosbenchhead
+- include: packages.yml
+  tags: packages
+
+- include: gitcosbench.yml
+  tags: cosbench
+

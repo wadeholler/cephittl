@@ -1,0 +1,5 @@
+---
+- name: git cosbench
+  git: repo='https://github.com/intel-cloud/cosbench.git'
+    dest=/home/cbt/cb
+  ignore_errors: yes
