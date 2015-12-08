@@ -7,3 +7,4 @@
   with_items:
    - git
    - java-1.7.0-openjdk
+   - unzip
