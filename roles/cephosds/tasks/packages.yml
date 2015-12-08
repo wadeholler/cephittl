@@ -7,3 +7,5 @@
   with_items:
    - ceph
    - ceph-common
+   - psmisc
+   - dstat

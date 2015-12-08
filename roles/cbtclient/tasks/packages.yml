@@ -13,4 +13,6 @@
     - zlib
     - librdmacm
     - dstat
+    - psmisc
+    - sysstat
   

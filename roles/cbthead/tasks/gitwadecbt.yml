@@ -3,3 +3,4 @@
   git: repo='https://github.com/wadeholler/add_radosgw-admin_create_user.git'
     dest=/home/cbt/cbt
     version=update_rbdfio_cleanup
+  ignore_errors: yes
