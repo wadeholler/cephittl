@@ -24,7 +24,7 @@
     - ../roles/cephmdss
 
 - name: cbt head install cephpkgs
-  hosts: mdss
+  hosts: cbthead
   roles:
     - ../roles/repos
     - ../roles/cephcbthead

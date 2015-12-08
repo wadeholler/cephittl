@@ -12,4 +12,5 @@
     - libaio
     - zlib
     - librdmacm
+    - dstat
   

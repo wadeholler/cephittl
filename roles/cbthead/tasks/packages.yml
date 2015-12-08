@@ -7,3 +7,6 @@
 
 - name: install python-lxml
   yum: name=python-lxml state=latest
+
+- name: install dstat
+  yum: name=dstat state=latest
