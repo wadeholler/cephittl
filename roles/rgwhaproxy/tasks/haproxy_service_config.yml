@@ -1,0 +1,8 @@
+
+- name: "Create haproxy service config files"
+  template:
+    src: service.j2
+    dest: "/etc/haproxy/haproxy.cfg"
+  tags:
+    - haproxy-service-config
+

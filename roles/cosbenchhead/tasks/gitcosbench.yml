@@ -16,3 +16,10 @@
 - name: update execute
   command: chmod -R a+x /home/cbt/cb/0.4.2.c3 
 
+- name: stop cosbench
+  command: /home/cbt/cb/0.4.2.c3/stop-all.sh chdir=/home/cbt/cb/0.4.2.c3/
+
+- name: start cosbench
+  command: /home/cbt/cb/0.4.2.c3/start-all.sh chdir=/home/cbt/cb/0.4.2.c3/
+  async: 10
+  poll: 0

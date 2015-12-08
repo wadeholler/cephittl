@@ -1,6 +1,18 @@
 ---
+- name: say hello to the rgws
+  hosts: rgws
+  tasks:
+    command: ls /tmp
+  tags:
+    - haproxy-service-config 
+
 - name: cosbench setup
   hosts: cosbenchhead
   roles:
     - ../roles/cosbenchhead
-    
+
+- name: rgwhaproxy
+  hosts: rgwhaproxy
+  roles:
+    - ../roles/rgwhaproxy
+

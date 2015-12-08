@@ -1,0 +1,5 @@
+---
+# tasks file for rgwhaproxy
+- include: packages.yml
+
+- include: haproxy_service_config.yml
