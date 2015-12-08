@@ -4,3 +4,6 @@
 
 - name: install git
   yum: name=git state=latest
+
+- name: install python-lxml
+  yum: name=python-lxml state=latest
