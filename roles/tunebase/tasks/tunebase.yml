@@ -1,0 +1,3 @@
+---
+- name: sysctl kernel.pid_max
+  sysctl: name=kernel.pid_max value=4194303 sysctl_set=yes state=present reload=yes

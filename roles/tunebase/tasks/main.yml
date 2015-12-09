@@ -1,2 +1,4 @@
 ---
-# tasks file for tunebase
+# tasks file for tuneosd
+- include: tunebase.yml
+  tags: tunebase

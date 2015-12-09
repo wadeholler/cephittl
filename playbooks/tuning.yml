@@ -1,4 +1,8 @@
 ---
+- name: base tuning
+  hosts: cephittl
+  roles: 
+    - ../roles/tunebase
 - name: cbt base setup
   hosts: osds
   roles:
