@@ -1,0 +1,4 @@
+---
+# tasks file for tuneosd
+- include: scheduler.yml
+  tags: tuning

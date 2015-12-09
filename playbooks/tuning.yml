@@ -1,0 +1,5 @@
+---
+- name: cbt base setup
+  hosts: osds
+  roles:
+    - ../roles/tuneosd
