@@ -16,3 +16,4 @@ Missing:
 
 missing dynamic grab of cbt users id_rsa.pub
 missing known_hosts addition from cbthead to all cbt nodes
+THIS DOES NOT PARITION DRIVES.  follow ceph/cbt for that setup
