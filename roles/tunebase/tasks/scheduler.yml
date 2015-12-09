@@ -1,7 +1,0 @@
----
-- name: copy setsched script
-  copy: src=setsched.sh dest=/tmp/setsched.sh mode=0700
-
-- name: run set IO scheduler props
-  command: sh /tmp/setsched.sh
-
