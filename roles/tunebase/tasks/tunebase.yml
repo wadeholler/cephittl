@@ -8,5 +8,5 @@
 - name: sysctl vm.swappiness 
   sysctl: name=vm.vfs_cache_pressure value=1 sysctl_set=yes state=present reload=yes
 
-- name: make sure that bond0 has the xmit_hash_policy=layer3+4
-  lineinfile: dest=/etc/sysconfig/network-scripts/ifcfg-bond0 regexp=^BONDING_OPTS line='BONDING_OPTS="miimon=100 mode=4 xmit_hash_policy=1"'
+- name: make sure that bond0 has the xmit_hash_policy=layer2+3
+  lineinfile: dest=/etc/sysconfig/network-scripts/ifcfg-bond0 regexp=^BONDING_OPTS line='BONDING_OPTS="miimon=100 mode=4 xmit_hash_policy=layer2+3"'
