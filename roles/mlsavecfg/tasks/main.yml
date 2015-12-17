@@ -1,0 +1,6 @@
+---
+# tasks file for tuneosd
+- include: savecfg.yml
+  tags: 
+    - mellanox
+    - always

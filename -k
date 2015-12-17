@@ -1,0 +1,14 @@
+HTTP/1.1 302 Found
+Date: Wed, 16 Aug 2000 01:21:18 GMT
+Server: Apache
+X-Frame-Options: DENY
+X-Content-Type-Options: nosniff
+Cache-Control: no-cache, no-store, must-revalidate, private
+Pragma: no-cache
+Expires: 0
+X-XSS-Protection: 1; mode=block
+Set-Cookie: session=IMLbLxxeHS1vuCyL6d8zo3Dt%2fcOIFNLUDwT4CRAbUYfjACg%3d; path=/; HttpOnly
+Location: http://192.168.241.3/admin/launch?script=rh&template=home
+Content-Length: 308
+Content-Type: text/html; charset=iso-8859-1
+

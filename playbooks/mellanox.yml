@@ -1,0 +1,5 @@
+---
+- name: base tuning
+  hosts: ansiblectrl
+  roles: 
+    - ../roles/mlsavecfg

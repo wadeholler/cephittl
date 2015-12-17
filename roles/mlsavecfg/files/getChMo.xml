@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xg-request>
+ <action-request>
+ <action-name>/do_rest</action-name>
+ <nodes>
+ <node>
+ <name>get</name>
+ <type>string</type>
+ <value>/mlnxos/v1/chassis/model</value>
+ </node>
+ </nodes>
+ </action-request>
+</xg-request>
+
