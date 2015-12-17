@@ -28,3 +28,9 @@
   roles:
     - ../roles/repos
     - ../roles/cephcbthead
+
+- name: cbt client install cephpkgs
+  hosts: cbtclients
+  roles:
+    - ../roles/repos
+    - ../roles/cephcbtclients
