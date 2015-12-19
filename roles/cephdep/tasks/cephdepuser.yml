@@ -1,0 +1,12 @@
+---
+- name: add cephdep group
+  group: name=cephdep gid=502 state=present
+
+- name: add cephdep user
+  user: name=cephdep uid=502 shell=/bin/bash generate_ssh_key=yes groups=cephdep
+
+- name: sudoers modification nopasswd
+  lineinfile: dest=/etc/sudoers regexp=^cephdep line='cephdep ALL=(ALL) NOPASSWD:ALL'
+
+- name: sudoers modification no requiretty
+  lineinfile: dest=/etc/sudoers regexp='Defaults    requiretty' line='#Defaults    requiretty'

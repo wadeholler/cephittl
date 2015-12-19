@@ -1,0 +1,16 @@
+---
+- name: get pdsh for cent7 step 1
+  get_url: url=ftp://rpmfind.net/linux/fedora/linux/development/rawhide/x86_64/os/Packages/p/pdsh-2.31-4.fc23.x86_64.rpm dest=/tmp/pdsh-2.31-4.fc23.x86_64.rpm
+
+- name: get pdsh for cent7 step 2
+  get_url: url=ftp://rpmfind.net/linux/fedora/linux/development/rawhide/x86_64/os/Packages/p/pdsh-rcmd-rsh-2.31-4.fc23.x86_64.rpm dest=/tmp/pdsh-rcmd-rsh-2.31-4.fc23.x86_64.rpm
+
+- name: get pdsh for cent7 step 3
+  get_url: url=ftp://rpmfind.net/linux/fedora/linux/development/rawhide/x86_64/os/Packages/p/pdsh-rcmd-ssh-2.31-4.fc23.x86_64.rpm dest=/tmp/pdsh-rcmd-ssh-2.31-4.fc23.x86_64.rpm
+
+- name: install pdsh
+  yum: name={{ item }} state=installed
+  with_items:
+    - /tmp/pdsh-2.31-4.fc23.x86_64.rpm
+    - /tmp/pdsh-rcmd-rsh-2.31-4.fc23.x86_64.rpm
+    - /tmp/pdsh-rcmd-ssh-2.31-4.fc23.x86_64.rpm

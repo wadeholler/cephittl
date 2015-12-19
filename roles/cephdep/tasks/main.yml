@@ -1,7 +1,5 @@
 ---
 # tasks file for cbt-base
-- include: getpdsh.yml
-  tags: getpdsh
 
 - include: cephdepuser.yml
   tags: user

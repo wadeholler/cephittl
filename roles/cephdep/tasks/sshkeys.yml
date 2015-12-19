@@ -1,0 +1,14 @@
+---
+- name: fetch cephdep user ssh key
+  fetch: src=/home/cephdep/.ssh/id_rsa.pub dest=/tmp/ flat=yes
+  run_once: true
+  delegate_to: cpx00002.ceph.ittl
+  #when: inventory_hostname == cephdep[0]
+ 
+- name: copy the cephdep key out to the target
+  copy: src=/tmp/id_rsa.pub dest=/tmp/id_rsa.pub
+
+- name: add cephdep ssh keys
+  authorized_key: user=cephdep key="{{ item }}"
+  with_file:
+    - /tmp/id_rsa.pub

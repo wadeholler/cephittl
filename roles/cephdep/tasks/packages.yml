@@ -1,0 +1,13 @@
+---
+- name: install plugin pri
+  yum: name=yum-plugin-priorities state=latest
+
+- name: install ceph repo
+  copy: src=etc/yum.repos.d/ceph.repo dest=/etc/yum.repos.d/ceph.repo
+
+- name: install packages
+  yum: name={{ item }} state=latest
+  with_items:
+   - ceph
+   - ceph-common
+   - psmisc
