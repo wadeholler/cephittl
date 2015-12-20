@@ -11,3 +11,4 @@
    - ceph
    - ceph-common
    - psmisc
+   - ceph-deploy

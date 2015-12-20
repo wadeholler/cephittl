@@ -2,7 +2,7 @@
 - name: fetch cephdep user ssh key
   fetch: src=/home/cephdep/.ssh/id_rsa.pub dest=/tmp/ flat=yes
   run_once: true
-  delegate_to: cpx00002.ceph.ittl
+  delegate_to: "{{ groups['cephdep'][0] }}"
   #when: inventory_hostname == cephdep[0]
  
 - name: copy the cephdep key out to the target

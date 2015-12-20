@@ -1,0 +1,3 @@
+---
+- name: sysctl kernel.pid_max
+  sysctl: name=kernel.hung_task_timeout_secs value=960 sysctl_set=yes state=present reload=yes

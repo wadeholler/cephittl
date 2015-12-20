@@ -2,3 +2,6 @@
 # tasks file for tuneosd
 - include: scheduler.yml
   tags: tuning
+
+- include: tuneosdkern.yml
+  tags: tuning

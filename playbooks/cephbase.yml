@@ -4,7 +4,6 @@
   roles:
     - ../roles/repos
     - ../roles/cephdep
-    - ../roles/cephcbthead
 
 - name: ceph base install MONS
   hosts: mons

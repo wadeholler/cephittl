@@ -6,3 +6,6 @@
 
 - include: sshkeys.yml
   tags: sshkey
+
+- include: packages.yml
+  tags: packages
