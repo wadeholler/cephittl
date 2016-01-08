@@ -40,3 +40,9 @@
 
 - name: sysctl core.netdev_budget 
   sysctl: name=net.core.netdev_budget value=600 sysctl_set=yes state=present reload=yes
+
+- name: limits update for open files per user
+  lineinfile: dest=/etc/security/limits.conf 
+              insertafter='# End of file'
+              line='*	-	nofile	65536'
+              state=present

@@ -1,13 +1,13 @@
 [ceph]
 name=Ceph packages
-baseurl=http://download.ceph.com/rpm-testing/el7/x86_64
+baseurl=http://download.ceph.com/rpm-infernalis/el7/x86_64
 enabled=1
 gpgcheck=1
 type=rpm-md
 gpgkey=https://download.ceph.com/keys/release.asc
 [cephnoarch]
 name=Ceph noarch packages
-baseurl=http://download.ceph.com/rpm-testing/el7/noarch
+baseurl=http://download.ceph.com/rpm-infernalis/el7/noarch
 enabled=1
 gpgcheck=1
 type=rpm-md
