@@ -1,0 +1,25 @@
+---
+#- name: git cosbench
+#  git: repo='https://github.com/intel-cloud/cosbench.git'
+#    dest=/home/cbt/cb
+#  ignore_errors: yes
+
+- name: download cosbench
+  get_url: url=https://github.com/intel-cloud/cosbench/releases/download/v0.4.2.c3/0.4.2.c3.zip dest=/tmp/0.4.2.c3.zip 
+
+- name: mkdir /home/cbt/cb
+  file: path=/home/cbt/cb state=directory mode=0755
+
+- name: unzip cosbench
+  unarchive: src=/tmp/0.4.2.c3.zip dest=/home/cbt/cb copy=no
+
+- name: update execute
+  command: chmod -R a+x /home/cbt/cb/0.4.2.c3 
+
+#- name: stop cosbench
+#  command: /home/cbt/cb/0.4.2.c3/stop-all.sh chdir=/home/cbt/cb/0.4.2.c3/
+
+#- name: start cosbench
+#  command: /home/cbt/cb/0.4.2.c3/start-all.sh chdir=/home/cbt/cb/0.4.2.c3/
+#  async: 10
+#  poll: 0

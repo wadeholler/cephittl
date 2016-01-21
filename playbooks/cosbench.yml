@@ -11,6 +11,13 @@
   roles:
     - ../roles/cosbenchhead
 
+- name: cosbenchdriver setup
+  hosts: cosbenchdrivers
+  roles:
+    - ../roles/cosbenchdriver
+  tags:
+    - cosbenchdriver
+
 - name: rgwhaproxy
   hosts: rgwhaproxy
   roles:
